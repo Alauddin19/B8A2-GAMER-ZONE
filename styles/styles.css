@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Work Sans';
+}
+/*started nav section*/
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 100px 10px 100px;
+    background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+align-items: center;
+}
+.nav-section1{
+    display: flex;
+    gap:16px;
+}
+.section1-icon{
+    width: 70px;
+    height: 30px;
+
+}
+.nav-section2{
+    display: flex;
+    gap: 25px;
+    
+
+}
+.nav-middle{
+    display: flex;
+    margin-top: 19px;
+    gap: 26px;
+}
+.nav-ending{
+    border-radius: 8px;
+background: rgba(11, 2, 35, 0.10);
+padding: 16px;
+}
+.nav-icon{
+    width: 28px;
+    height: 16px;
+    
+}
