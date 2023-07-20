@@ -12,13 +12,16 @@ body{
     margin: 20px 0px;
 }
 /*started nav section*/
+
 header nav {
     height: 135px;
     display: flex;
-    padding-left: 95px;
-    padding-right: 95px;
+    padding-left: 100px;
+    padding-right: 100px;
     justify-content: space-between;
     align-items: center;
+    background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
 .nav-header {
@@ -63,6 +66,437 @@ header nav {
 .nav-bar img {
     width: 20px;
 }
+/* Banner section */
+.banner {
+    width: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background: linear-gradient(to left, rgba(146, 87, 238, 0.05), rgba(241, 68, 174, 0.05));
+}
+
+.banner-content-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-image: url(./image/Group14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 100px;
+}
+
+.banner-content {
+    padding: 100px 0px;
+}
+
+.banner-content h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.grad-h1 {
+    font-size: 5.9rem;
+    font-weight: 900;
+    background: -webkit-linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.banner ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button1,
+.button2 {
+    color: white;
+    font-size: 20px;
+    font-family: 600;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: #F948B2;
+    margin-left: 20px;
+}
+
+.button2 {
+    background-color: #4EC5F7;
+}
+
+
+.banner-img img {
+    margin-bottom: -15px;
+    width: 600px;
+    padding-right: 100px;
+}
+/* We are gamer section*/
+.We-are-gamer{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gamer-img{
+    width: 50%;
+}
+.We-are-gamer img{
+    width: 100%;
+}
+.We-are-gamer h1{
+    font-size: 2.7rem;
+}
+.gamer-content{
+    width: 35%;
+    text-align: right;
+}
+.gamer-content button{
+    
+    margin: 0px;
+}
+.unleash{
+    color: #534C64;
+}
+.unleash p{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.unleash h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Funny Videos */
+.Funny-video{
+    text-align: center;
+    margin: 60px 0px;
+}
+.Funny-h1, .video-h1{
+    font-size: 2.7rem;
+}
+/* Cards */
+.cards{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.card-container{
+    width: 100%;
+    position: relative;
+}
+.overlay{
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.60);
+    display: none;
+    border-radius: 10px;
+}
+.overlay-img{
+    width: 60px;
+    margin: 0px auto;
+    margin-top: 47%;
+}
+.overlay p{
+    margin-left: 35%;
+}
+.card-container:hover .overlay{
+    display: block;
+    z-index: 1;
+}
+.cards-div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.cards-div2{
+    justify-content: flex-start;
+}
+.card{
+    width: 40%;
+
+}
+.card img{
+
+    width: 100%;
+    border-radius: 10px;
+}
+/* No installs */
+.Install-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.No-install{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.install-content{
+    text-align: right;
+    width: 35%;
+}
+.install-content2{
+    text-align: left;
+}
+.install-content h1{
+    font-size: 2.5rem;
+}
+.install-img{
+    width: 50%;
+}
+.install-img2{
+    text-align: right;
+}
+.install-img .img1{
+    width: 100%;
+}
+.install-img .img2{
+    width: 35%;
+    position: relative;
+    margin-top: -170px;
+    margin-left: -50px;
+}
+.install-img2 .img2{
+    margin-top: -170px;
+    margin-left: 0px;
+    margin-right: -50px;
+}
+/* Icon Card */
+.icon-cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    height: 220px;
+}
+.icon-cards{
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "c1 c1 c2 c2 c3 c3 c4 c4 c5 c5"
+    ". c6 c6 c7 c7 c8 c8 c9 c9 .";
+    column-gap: 20px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+.c1{
+    grid-area: c1;
+}
+.c2{
+    grid-area: c2;
+}
+.c3{
+    grid-area: c3;
+}
+.c4{
+    grid-area: c4;
+}
+.c5{
+    grid-area: c5;
+}
+.c6{
+    grid-area: c6;
+}
+.c7{
+    grid-area: c7;
+}
+.c8{
+    grid-area: c8;
+}
+.c9{
+    grid-area: c9;
+}
+
+.icon-card{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.icon-card:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    border-radius: 35px;
+    position: relative;
+    padding: 5px;
+}
+@media screen and (max-width: 576px) {
+    * {
+        font-size: 12px;
+    }
+
+    .nav-header {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .nav-header h1{
+        font-size: 3rem;
+    }
+    nav span{
+        font-size: 3rem;
+    }
+
+    header nav {
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .nav-content ul {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .banner-content h1 {
+        font-size: 5.9rem;
+    }
+
+    .banner-content h2 {
+        font-size: 3rem;
+        padding-left:;
+    }
+    .banner-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 100px;
+    }
+    .banner-img img {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .button1 .button2 {
+        font-size: 16px;
+        width:auto;
+        justify-content: center;
+    }
+
+    .banner-content-container {
+        width: 100%;
+        margin: 0px;
+        justify-content: center;
+    }
+    .banner-content {
+        padding: 0px 0px;
+        justify-content: center;
+    }
+    .We-are-gamer{
+        flex-direction: column;
+        height: auto;
+    
+    }
+    .gamer-content{
+        text-align: center;
+        width: 90%;
+        height: 100%;
+        
+    }
+    .gamer-img{
+        width: 90%;
+    }
+    .Funny-h1, .video-h1{
+        font-size: 2.2rem;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .cards-div{
+        flex-direction: column;
+    }
+    .card{
+        width: 60%;
+        margin: 0px auto;
+    }
+    .overlay-img{
+        width: 60px;
+        margin: 0px auto;
+        margin-top: 40%;
+    }
+    .Funny-video{
+        margin-top: 100px;
+    }
+
+    .No-install{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .install-content{
+        text-align: center;
+        width: 90%;
+    }
+    .install-content2{
+        text-align: center;
+    }
+    .install-content h1{
+        font-size: 2.5rem;
+    }
+    .install-img{
+        width: 80%;
+    }
+    .install-img .img1{
+        width: 100%;
+    }
+    .install-img .img2{
+        width: 45%;
+        position: relative;
+        margin-top: -170px;
+        margin-left: -50px;
+    }
+
+    .icon-cards-container{
+        margin-top: 50px;
+        height: auto;
+    }
+    .icon-cards{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "c1 c1 c2 c2 c3 c3"
+                             "c4 c4 c5 c5 c6 c6"
+                             "c7 c7 c8 c8 c9 c9";
+        row-gap: 20px;
+    }
+    
+    .icon-card img{
+        width: 20%;
+    }
+    .icon-card{
+        margin: 0px auto;
+    }
+    .icon-card p{
+        font-size: 0.8rem;
+    }
+}
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
     *{
@@ -75,8 +509,27 @@ header nav {
         font-size: 1.5rem;
     } 
     nav{
-        display:flex;
-        justify-content: space-around; 
+        display: block;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .cards-div{
+        justify-content: center;
+    }
+    .cards-div2{
+        justify-content: center;
+    }
+    .icon-cards{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "c1 c1 c2 c2 c3 c3"
+                             "c4 c4 c5 c5 c6 c6"
+                             "c7 c7 c8 c8 c9 c9";
+        row-gap: 20px;
     }
 
 }  
