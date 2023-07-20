@@ -335,12 +335,67 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     font-weight: 600;
 }
 .icon-card:hover{
-    border: 1px solid #FF42A5;
-    color: #FF42A5;
+    border: 1px solid #b80b64;
+    color: #be0f6a;
     border-radius: 35px;
     position: relative;
     padding: 5px;
 }
+/* Footer section */
+footer{
+    height: 600px;
+    background-color: #0B0223;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 80%;
+    text-align: center;
+}
+.foot-header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.footer-list, .footer-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.footer-list{
+    margin-bottom: 60px;
+}
+.footer-list ul li{
+    list-style: none;
+}
+.part1,.last-ul{
+    color: #FFF;
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+}
+.footer-terms{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.footer-terms a{
+    color: rgba(255, 255, 255, 0.60);
+}
+.footer-p{
+    color: rgba(255, 255, 255, 0.60);
+}
+.foot-header h1{
+    font-size: 2.1rem;
+}
+.c-footer{
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width: 576px) {
     * {
         font-size: 12px;
@@ -496,6 +551,31 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
     .icon-card p{
         font-size: 0.8rem;
     }
+    .footer-list, .footer-list ul{
+        gap: 50px;
+    }
+    .footer-list{
+        margin-bottom: 50px;
+    }
+    .footer-list ul{
+        margin-bottom: -10px;
+    }
+    .footer-list img{
+        width: 30px;
+    }
+    .footer-list{
+        flex-direction: column;
+    }
+    .foot-header h1{
+        font-size: 2.1rem;
+    }
+    .foot-header h1 span{
+        font-size: 2.1rem;
+    }
+    .last-ul{
+        margin-top: -20px;
+    }
+    
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -531,5 +611,11 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
                              "c7 c7 c8 c8 c9 c9";
         row-gap: 20px;
     }
+    .foot-header h1{
+        font-size: 2rem;
+    }
+    .foot-header h1 span{
+        font-size: 2rem;
 
 }  
+}
